@@ -164,7 +164,7 @@ predictions = detector.predict(ood_images)
 
 ### Complete Example with CIFAR-10/CIFAR-100
 
-For a complete example using CIFAR-10 as in-distribution and CIFAR-100 as out-of-distribution data, see the [examples/cifar_demo.py](examples/cifar_demo.py) script in the repository.
+For a complete example using CIFAR-10 as in-distribution and CIFAR-100 as out-of-distribution data, see the [forte_demo.py](https://github.com/ICICLE-ai/forte-api/blob/main/forte_demo.py) script in the repository.
 
 ### Experimenting with Different Methods
 
