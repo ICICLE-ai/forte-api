@@ -13,7 +13,7 @@ Forte API detects out-of-distribution images using feature embeddings and repres
 
 ## References
 
-- [Forte training catalog](https://icicle-ai.github.io/training-catalog/docs/Forte/forte)
+- [Forte training catalog](https://github.com/ICICLE-ai/training-catalog/blob/docusaurus-demo/my-website/docs/Forte/forte.md)
 - [Forte paper implementation](https://github.com/DebarghaG/forte)
 - [Upstream repository](https://github.com/DebarghaG/forte-api)
 
