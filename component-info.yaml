@@ -1,0 +1,15 @@
+- id: "ForteAPI:0.1.0"
+  owner: "Debargha Ganguly"
+  primaryThrust: "core/FoundationAI"
+  name: "Forte API"
+  status: "AlphaRelease"
+  description: "Forte API detects out-of-distribution images using feature embeddings and representation typicality. The detector can be fit on in-distribution examples alone."
+  componentVersion: "0.1.0"
+  targetIcicleRelease: "2025-05"
+  licenseUrl: "https://github.com/ICICLE-ai/forte-api?tab=MIT-1-ov-file"
+  publicAccess: true
+  sourceCodeUrl: "https://github.com/ICICLE-ai/forte-api"
+  codeReviewConducted: false
+  testsWritten: false
+  developerDocumentationAvailable: true
+  trainingTutorialsAvailable: true

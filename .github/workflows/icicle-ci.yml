@@ -1,0 +1,40 @@
+name: ICICLE CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Python sources
+        run: python -m compileall -q forte_api.py forte_demo.py
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu 'torch==2.6.0' 'torchvision==0.21.0'
+          python -m pip install -r requirements.txt
+      - name: Smoke-test the detector on CPU
+        run: |
+          python - <<'PYTHON'
+          from tempfile import TemporaryDirectory
+          import torch
+          from forte_api import ForteOODDetector
+
+          with TemporaryDirectory() as directory:
+              model = ForteOODDetector(device="cpu", embedding_dir=directory)
+              samples = torch.tensor([[0.0, 0.0], [3.0, 4.0]])
+              distances = model._compute_pairwise_distance(samples)
+              torch.testing.assert_close(distances, torch.tensor([[0., 5.], [5., 0.]]))
+          PYTHON

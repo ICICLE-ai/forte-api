@@ -1,5 +1,33 @@
 # Forte API Documentation
 
+<!-- ICICLE metadata start -->
+Forte API detects out-of-distribution images using feature embeddings and representation typicality. The detector can be fit on in-distribution examples alone.
+
+**Tags:** Foundation-AI
+
+### License
+
+[MIT](LICENSE)
+
+## References
+
+- [Forte training catalog](https://icicle-ai.github.io/training-catalog/docs/Forte/forte)
+- [Forte paper implementation](https://github.com/DebarghaG/forte)
+- [Upstream repository](https://github.com/DebarghaG/forte-api)
+
+## Acknowledgements
+
+*National Science Foundation (NSF) funded AI institute for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE) (OAC 2112606)*
+
+## Issue reporting
+
+Report issues on [GitHub](https://github.com/DebarghaG/forte-api/issues).
+
+---
+
+# How-To Guides
+<!-- ICICLE metadata end -->
+
 ## Overview
 
 The Forte library provides robust out-of-distribution (OOD) detection capabilities through the `ForteOODDetector` class. The core algorithm is built on the principle of **F**inding **O**utliers using **R**epresentation **T**ypicality **E**stimation, which:
