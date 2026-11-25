@@ -1,3 +1,5 @@
+# Canonical source: https://github.com/DebarghaG/forte-api
+# Project contributions: https://github.com/DebarghaG/forte-api/pulls
 - id: "ForteAPI:0.1.0"
   owner: "Debargha Ganguly"
   primaryThrust: "core/FoundationAI"

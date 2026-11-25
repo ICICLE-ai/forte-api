@@ -5,6 +5,8 @@ Forte API detects out-of-distribution images using feature embeddings and repres
 
 **Tags:** Foundation-AI
 
+> This ICICLE fork tracks [`DebarghaG/forte-api`](https://github.com/DebarghaG/forte-api). Send code contributions to [upstream pull requests](https://github.com/DebarghaG/forte-api/pulls) and report bugs or feature requests in [upstream issues](https://github.com/DebarghaG/forte-api/issues).
+
 ### License
 
 [MIT](LICENSE)
